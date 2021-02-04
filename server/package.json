@@ -1,0 +1,17 @@
+{
+  "name": "chat-o-matic-server",
+  "version": "1.0.0",
+  "description": "A GraphQL server for chat-o-matic",
+  "type": "module",
+  "main": "server.js",
+  "author": "BineetNaidu <bineet.s.naidu@gmail.com> (https://bineetnaidu-io.web.app)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "nodemon": "^2.0.7"
+  }
+}
