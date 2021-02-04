@@ -1,11 +1,9 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
+import { useSubscription } from '@apollo/client';
 import { GET_MESSAGES } from './queries';
 
 const Message = ({ user }) => {
-  const { data } = useQuery(GET_MESSAGES, {
-    pollInterval: 500,
-  });
+  const { data } = useSubscription(GET_MESSAGES, {});
   if (!data) return null;
 
   return (
