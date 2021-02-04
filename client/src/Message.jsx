@@ -4,6 +4,7 @@ import { GET_MESSAGES } from './queries';
 
 const Message = ({ user }) => {
   const { data } = useSubscription(GET_MESSAGES, {});
+
   if (!data) return null;
 
   return (
